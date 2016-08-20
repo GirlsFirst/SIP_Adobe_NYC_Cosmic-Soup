@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+title {
+  10px;
+}
+div {
+
+}
+
+.one {
+  margin-left: 60px;
+  width: 700px;
+  margin-left: 40px;
+}
+
+p.first {
+  text-indent: 5em;
+}
+  
+p {
+  word-wrap: break-word;
+}
+
+.footer {
+  position: fixed;
+}
+
+.two {
+  margin-right: 10px;
+  margin-bottom: 100px;
+}
+/* Dropdown Button */
+.dropbtn {
+     color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background:#FFB5EE
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #DAB5FF;
+}
+Try it Yourself »
