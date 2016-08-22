@@ -1,55 +1,164 @@
+<!DOCTYPEHTML>
+<html>
+<head>
+<title>Around The World</title>
+</head>
+<!-- Nav Bar HTML and CSS -->
+<head>
+<style>
+header {
+      text-align: center;
+      display: table;
+      width: 100%;
+      margin: 4px 0;
+      }
+         .header-navbar {
+      text-align: center;
+      clear: both;
+      width: 100%;
+        }
+        ul.header-links {
+            margin: 0 auto;
+        }
+        ul.header-links li {
+            text-align: center;
+            font-family: 'LemonMilk', sans-serif;  
+            display: inline-block;
+            padding: 10px 50px;
+            border-radius: 2px;
+        }
+        ul.header-links li:hover {
+                  }
+        .header-link {
+            font-size: 12px;
+            color: Black;
+        }
+        nav {
+      padding: 7px;
+      clear: both;
+    }
+</style>
+</head>
+<body>
+
+ <div class="header-navbar">
+        <ul class="header-links">
+            <a class="header-link" target="_blank" href="cosmic-soup.html"><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
+               <a class="header-link" target="_blank" href="aroundtheworld.html"><li><i class="fa fa-fw fa-heart"></i>AROUND THE WORLD</li></a>
+               <a class="header-link" target="_blank" href="forum.html"><li><i class="fa fa-fw fa-heart"></i>FORUM</li></a>
+                <a class="header-link" target="_blank" href="oppurtunet.html"><li><i class="fa fa-fw fa-heart"></i>OPPURTUNET</li></a>
+                <a class="header-link" target="_blank" href="gallery.html"><li><i class="fa fa-fw fa-heart"></i>GALLERY</li></a>
+                <a class="header-link" target="_blank" href="aboutus.html"><li><i class="fa fa-fw fa-heart"></i>ABOUT US</li></a>
+                <a class="header-link" target="_blank" href="login.html"><li><i class="fa fa-fw fa-heart"></i>LOG IN</li></a>
+
+        </ul>
+        </div>
+
+<!-- Articles -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Articles</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<style type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
 
-		.split-para {display:block; margin:10px;} /*aligns text to the left*/
-		.split-para span { display:block;float:right;width:40%;margin-left:10px;} /*aligns text to the right*/
-		h1{font-size: 180%;}
-		h2{font-size: 180%;}
-		h3{font-size: 180%;}
-		h4{font-size: 180%;}
-		h5{font-size: 180%;}
-		h6{font-size: 180%;}
-		p{font-style: italic;}
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
 
-	</style>
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
 </head>
 <body>
-	<div id="Article Names">
-		<h1 class="split-para">Animals <span>Social Justice</span></h1>
-		<p class="split-para">April 28, 2015 <span>July 3, 2013</span> <br> "Animal Rights, Animal Wrongs" <span>"Natural Hair vs. Corporate America"<br></span> </p>
-		<div>
-			<p class="split-para">August 19, 2016 <span>December 21, 2015</span> <br> "New Victory for Animal Rights! Baltmore National Aquarium Frees Dolphins to Oceanside Habitat" <span>"Gay, Lesbian, and Bisexual Teens: Facts for Teens and Their Parents"<br></span> </p>
-		</div>
-		<div>
-			<p class="split-para">August 17, 2016 <span>March 30, 2015</span> <br> "Pre-Hispanic Mexican Civilization May Have Bred and Managed Rabbits and Hares" <span>"Homophobia Among Teenage Boys"<br></span> </p>
-		</div>
-		<div>
-			<p class="split-para">August 18, 2016 <span>July 9, 2016</span> <br> "Animal Rights Group Files Federal Complaint Against Bear Show Featured at Salt Lake County Fair" <span>"10 Things You Can Do To Help Black Lives Matter End Police Violence"<br></span> </p>
-		</div>
-		<h2 class="split-para"><br> Homelessness <span>Education</span></h2>
-		<p class="split-para">October 28, 2014 <span>June 22, 2016</span> <br> "Number Of Homeless Kids In NYC Spikes 63 Percent In 5 Years" <span>"America's Not-So-Broken Education System"<br></span></p>
-		<div>
-			<p class="split-para">August 19, 2016 <span>June 2, 2016</span> <br> "Homelessness Is an Emergency" <span>"College Counseling: Public vs. Private School - Which One Is Right For Me?"<br></span></p>
-		</div>
-		<div>
-			<p class="split-para">August 19, 2016 <span>June 2, 2016</span> <br> "Homelessness Is an Emergency" <span>"College Counseling: Public vs. Private School - Which One Is Right For Me?"<br></span></p>
-		</div>
-		<h3 class="split-para"><br>Foreign Affairs <span>Health</span></h3>
-		<p class="split-para">August 17, 2016 <span>June 22, 2015</span> <br> "Missing Malaysian Oil Tanker Found in Indonesian Waters" <span>"Sleep to Succeed"<br></span></p>
-		<h4 class="split-para"><br>Bullying/Violence <span>Natural Disasters</span></h4>
-		<p class="split-para">March 30, 2015 <span>Month, Day, Year</span> <br> "Homophobia Among Teenage Boys at Frightening Levels" <span>"Headline"<br></span></p>
-		<h5 class="split-para"><br>Environment <span>Politics</span></h5>
-		<p class="split-para">Month, Day, Year <span>August 17, 2016</span> <br> "Headline" <span>"The Pull of Racial Patronage"<br></span></p>
-		<h6 class="split-para"><br>Religion <span>Other</span></h6>
-		<p class="split-para">Month, Day, Year <span>August 17, 2016</span> <br> "Headline" <span>"What Olympic Gold Medals Are Actually Made Of?"<br></span></p>
-	</div>
+ 
+<div id="flip">Read more</div>
+<div id="panel">Hello world AKSDHJASHDAJSKHDKJHFJAÓJHJHKAJSOQEIWHEJNBMNABKDJ AHSJAH  J JHKADH  HKJAHSDOIYEWYQYE  DJAKDB QI DQWKBD OUQWBD BDUOWQBD WQUODJQWKD QDBQWDJKBD KJB SAODBAJSDB QIUWBDKJSA BDHQBD JQ B!</div>
+
+  <div id="Article Names">
+    <h1 class="split-para">Animals <span>Social Justice</span></h1>
+    <p class="split-para">April 28, 2015 <span>July 3, 2013</span> <br> "Animal Rights, Animal Wrongs" <span>"Natural Hair vs. Corporate America"<br></span> </p>
+    <div>
+      <p class="split-para">August 19, 2016 <span>December 21, 2015</span> <br> "New Victory for Animal Rights! Baltmore National Aquarium Frees Dolphins to Oceanside Habitat" <span>"Gay, Lesbian, and Bisexual Teens: Facts for Teens and Their Parents"<br></span> </p>
+    </div>
+    <div>
+      <p class="split-para">August 17, 2016 <span>March 30, 2015</span> <br> "Pre-Hispanic Mexican Civilization May Have Bred and Managed Rabbits and Hares" <span>"Homophobia Among Teenage Boys"<br></span> </p>
+    </div>
+    <div>
+      <p class="split-para">August 18, 2016 <span>July 9, 2016</span> <br> "Animal Rights Group Files Federal Complaint Against Bear Show Featured at Salt Lake County Fair" <span>"10 Things You Can Do To Help Black Lives Matter End Police Violence"<br></span> </p>
+    </div>
+    <h2 class="split-para"><br> Homelessness <span>Education</span></h2>
+    <p class="split-para">October 28, 2014 <span>June 22, 2016</span> <br> "Number Of Homeless Kids In NYC Spikes 63 Percent In 5 Years" <span>"America's Not-So-Broken Education System"<br></span></p>
+    <div>
+      <p class="split-para">August 19, 2016 <span>June 2, 2016</span> <br> "Homelessness Is an Emergency" <span>"College Counseling: Public vs. Private School - Which One Is Right For Me?"<br></span></p>
+    </div>
+    <div>
+      <p class="split-para">August 19, 2016 <span>June 2, 2016</span> <br> "Homelessness Is an Emergency" <span>"College Counseling: Public vs. Private School - Which One Is Right For Me?"<br></span></p>
+    </div>
+    <h3 class="split-para"><br>Foreign Affairs <span>Health</span></h3>
+    <p class="split-para">August 17, 2016 <span>June 22, 2015</span> <br> "Missing Malaysian Oil Tanker Found in Indonesian Waters" <span>"Sleep to Succeed"<br></span></p>
+    <h4 class="split-para"><br>Bullying/Violence <span>Natural Disasters</span></h4>
+    <p class="split-para">March 30, 2015 <span>Month, Day, Year</span> <br> "Homophobia Among Teenage Boys at Frightening Levels" <span>"Headline"<br></span></p>
+    <h5 class="split-para"><br>Environment <span>Politics</span></h5>
+    <p class="split-para">Month, Day, Year <span>August 17, 2016</span> <br> "Headline" <span>"The Pull of Racial Patronage"<br></span></p>
+    <h6 class="split-para"><br>Religion <span>Other</span></h6>
+    <p class="split-para">Month, Day, Year <span>August 17, 2016</span> <br> "Headline" <span>"What Olympic Gold Medals Are Actually Made Of?"<br></span></p>
+  </div>
+
+</body>
+</html>
+<!-- FOOTER -->
+<div id="css-table">
+<div class="col"><font face="LemonMilk"><p><img src="cs-logo.png" style="width:40%"></img></p><p>COSMIC SOUP</div>
+<div class="col"><p>COSMIC SOUP WAS CREATED AT THE ADOBE NY GIRLS WHO CODE SIP BY FOUR GIRLS. WITH A HOPE TO GET MORE TEENS TO TALK ABOUT CURRENT ISSUES AND DISCUSS THEIR IDEAS, THIS WEBSITE WAS CREATED.</p></div>
+<div class="col"><p>SUBSCRIBE FOR UPDATES!</p></div>
+</div></font>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.one {
+  text-align: center;
+  font-family: 'LemonMilk', sans-serif; 
+ }
+</style>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.white {
+  color:#FFFFFF;
+}
+#css-table {
+  display: table;
+}
+#css-table .col {
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
+}
+#css-table .col:nth-child(even) { 
+}
+#css-table .col:nth-child(odd) {
+
+}
+</style>
 </body>
 </html>
