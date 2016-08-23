@@ -1,9 +1,11 @@
 body{
-  background: powderblue;
+  background-color: #FFFFFF;
 }
 
 p.first {
   text-indent: 5em;
+  font-family: 'Architects Daughter', cursive;
+
 }
   
 p {
@@ -49,6 +51,7 @@ p {
 .text {
   color: red;
   font-size: 25px;
+  font-family: 'Archivo Narrow', sans-serif;
   padding: 8px 12px;
   position: absolute;
   width: 100%;
