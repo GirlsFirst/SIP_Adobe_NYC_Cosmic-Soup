@@ -11,10 +11,86 @@
     #element1 {display:inline-block;margin-right:10px;} 
     #element2 {display:inline-block;} 
   </style>
+  <style>
+header {
+      text-align: center;
+      display: table;
+      width: 100%;
+      margin: 4px 0;
+      }
+         .header-navbar {
+      text-align: center;
+      clear: both;
+      width: 100%;
+        }
+        ul.header-links {
+            margin: 0 auto;
+        }
+        ul.header-links li {
+            text-align: center;
+            font-family: 'LemonMilk', sans-serif;  
+            display: inline-block;
+            padding: 10px 50px;
+            border-radius: 2px;
+        }
+        ul.header-links li:hover {
+                  }
+        .header-link {
+            font-size: 12px;
+            color: Black;
+        }
+        nav {
+      padding: 7px;
+      clear: both;
+    }
+</style>
 </head>
 <body>
+<!-- Header -->
+ <div class="header-navbar">
+        <ul class="header-links">
+            <a class="header-link" href="cosmic-soup.html"><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
+               <a class="header-link" href="aroundtheworld.html"><li><i class="fa fa-fw fa-heart"></i>AROUND THE WORLD</li></a>
+                <a class="header-link" href="oppurtunet.html"><li><i class="fa fa-fw fa-heart"></i>OPPURTUNET</li></a>
+                <a class="header-link" href="gallery.html"><li><i class="fa fa-fw fa-heart"></i>GALLERY</li></a>
+                <a class="header-link" href="aboutus.html"><li><i class="fa fa-fw fa-heart"></i>ABOUT US</li></a>
+                <a class="header-link" href="login.html"><li><i class="fa fa-fw fa-heart"></i>LOG IN</li></a>
 
- <div class ="one">
+        </ul>
+        </div>
+<hr>
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<!--  Our  Goal Tab -->
+<div id="flip">OUR GOAL</div>
+<div id="panel">We hope that young adolescents like us learn more about what is happening around the world</div>
+
     <h2 class="title" style="text-align:center;">
       Protecting the Environment in Senegal? There's an App for That
     </h2>
@@ -23,7 +99,7 @@
     </p>
     <br>
     <br>
-  </div>
+
   <div class = "one" id="element1">
     <p class="first">
       DAKAR (Thomson Reuters Foundation) - Hunched over her laptop, eyes locked on the screen, Marième Seye listens to the step-by-step instructions given by her teacher. </p>
@@ -54,9 +130,12 @@
     <p class="first">The Android apps will be made available on Google Play, where they can be downloaded for free.
     </p>
     <p class="first">Idriss Sall Diop, 18, just passed his baccalaureate. "This is totally new to me, I've never studied IT and just started using computers," he admitted from his front-row seat. </p>
+  </div>
+
+  <div class="two" id="element2">
     <p class="first">"Young people are interested in social media but not necessarily in the environment," he added. "I think these apps are a way around that – we're always keen to learn about new things."
     </p>
-    <p class="first">FROM CONSUMER TO CREATOR
+    <p >FROM CONSUMER TO CREATOR
     </p>
     <p class="first">Adja Aissatou Sy, communications manager at Senegal's Ministry of Environment, said at the workshop that teenagers have limited awareness when it comes to environmental issues.
     </p>
@@ -93,5 +172,46 @@
   </div>
   </div>
 
+<div id="css-table">
+<div class="col"><font face="LemonMilk"><p><img src="cs-logo.png" style="width:40%"></img></p><p>COSMIC SOUP</div>
+<div class="col"><p>COSMIC SOUP WAS CREATED AT THE ADOBE NY GIRLS WHO CODE SIP BY FOUR GIRLS. WITH A HOPE TO GET MORE TEENS TO TALK ABOUT CURRENT ISSUES AND DISCUSS THEIR IDEAS, THIS WEBSITE WAS CREATED.</p></div>
+<div class="col"><p>SUBSCRIBE FOR UPDATES!</p></div>
+</div></font>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.one {
+  text-align: center;
+  font-family: 'LemonMilk', sans-serif; 
+ }
+</style>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.white {
+  color:#FFFFFF;
+}
+#css-table {
+  display: table;
+}
+#css-table .col {
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
+}
+#css-table .col:nth-child(even) { 
+}
+#css-table .col:nth-child(odd) {
+
+}
+</style>
 </body>
 </html>

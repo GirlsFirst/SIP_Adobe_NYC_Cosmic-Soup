@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
-<!-- Nav Bar HTML and CSS -->
 <head>
-<style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>An Understated Emergency: Homelessness</title>
+  <link rel="stylesheet" href="dolphin.css">
+   <style type="text/css">
+    #element1 {float:left;}
+    #element2 {float:right;}
+    #element1 {display:inline-block;margin-right:10px;} 
+    #element2 {display:inline-block;} 
+  </style>
+  <style>
 header {
       text-align: center;
       display: table;
@@ -37,7 +46,7 @@ header {
 </style>
 </head>
 <body>
-
+<!-- Header -->
  <div class="header-navbar">
         <ul class="header-links">
             <a class="header-link" href="cosmic-soup.html"><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
@@ -49,23 +58,41 @@ header {
 
         </ul>
         </div>
-        <hr>
-        <hr>
+<hr>
+<hr>
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>An Understated Emergency: Homelessness</title>
-  <link rel="stylesheet" href="dolphin.css">
-   <style type="text/css">
-    #element1 {float:left;}
-    #element2 {float:right;}
-    #element1 {display:inline-block;margin-right:10px;} 
-    #element2 {display:inline-block;} 
-  </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<!--  Our  Goal Tab -->
+<div id="flip">OUR GOAL</div>
+<div id="panel">We hope that young adolescents like us learn more about what is happening around the world</div>
 </head>
 <body>
 
- <div class ="one">
     <h2 class="title" style="text-align:center;">
       Homelessness Is an Emergency — But Not Like an Earthquake
     </h2>
@@ -74,7 +101,7 @@ header {
     </p>
     <br>
     <br>
-  </div>
+
   <div class = "one" id="element1">
     <p class="first">
       At the urging of elected officials from Los Angeles County and San Francisco, the state Assembly has passed a resolution requesting that Gov. Jerry Brown declare homelessness a state emergency. An identical resolution is currently moving through the state Senate. There’s no question that homelessness is an expanding “humanitarian crisis,” as the L.A. County Board of Supervisors asserted in letters to state lawmakers. And with the number of people living in encampments, tents and vehicles in the county more than doubling since 2013, you could even call it a civic emergency.. </p>
@@ -84,6 +111,8 @@ header {
     <p class="first">
      To its credit, county government has earmarked $100 million in the current fiscal year to fund services for homeless people. But it estimates that it will need more than four times as much in the coming years to provide the full level of services and assistance that homeless people need. That’s a big hole to fill.
      </p>
+     </div>
+     <div class="two" id="element2">
     <p class="first">Over the last year, it’s been heartening to see county and city officials recognize the crisis, make detailed plans for how to combat it, and put realistic price tags on the fixes. But it’s been frustrating to watch them grasp at ways to finance their plans. While city officials have put a general obligation bond on the November ballot to fund housing for homeless and low-income residents, county officials have considered and scotched a parcel tax, a sales tax and a marijuana tax. They unsuccessfully lobbied state lawmakers to give them the authority to levy a local tax on millionaires. And now they are making a long-shot bid to tap into funds the state set aside for a rainy day.
     </p>
     <p class="first"> Certainly the supervisors — especially Mark Ridley-Thomas — have been dogged in their pursuit of funding. But this latest request smacks of a playwright resorting to a deus ex machina, or a parent dipping into a child’s college fund to pay the orthodontist. The route to financing the homelessness plan is not through the state’s reserves. It is through tough local choices: making cuts to pay for services and housing assistance, or putting fundraising measures on local ballots. And in order to win public support, city and county officials have to show that the results of their efforts will be measured to ensure the money is spent effectively. It’s hard, it’s a sacrifice, but that’s where we are. Let’s concentrate on those options.
@@ -102,7 +131,7 @@ header {
     <a href="https://tumblr.com">tumblr</a>
   </div>
   </div>
-<!-- FOOTER -->
+
 <div id="css-table">
 <div class="col"><font face="LemonMilk"><p><img src="cs-logo.png" style="width:40%"></img></p><p>COSMIC SOUP</div>
 <div class="col"><p>COSMIC SOUP WAS CREATED AT THE ADOBE NY GIRLS WHO CODE SIP BY FOUR GIRLS. WITH A HOPE TO GET MORE TEENS TO TALK ABOUT CURRENT ISSUES AND DISCUSS THEIR IDEAS, THIS WEBSITE WAS CREATED.</p></div>

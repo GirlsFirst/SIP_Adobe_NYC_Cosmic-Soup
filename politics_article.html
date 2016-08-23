@@ -11,19 +11,95 @@
     #element1 {display:inline-block;margin-right:10px;} 
     #element2 {display:inline-block;} 
   </style>
+<style>
+header {
+      text-align: center;
+      display: table;
+      width: 100%;
+      margin: 4px 0;
+      }
+         .header-navbar {
+      text-align: center;
+      clear: both;
+      width: 100%;
+        }
+        ul.header-links {
+            margin: 0 auto;
+        }
+        ul.header-links li {
+            text-align: center;
+            font-family: 'LemonMilk', sans-serif;  
+            display: inline-block;
+            padding: 10px 50px;
+            border-radius: 2px;
+        }
+        ul.header-links li:hover {
+                  }
+        .header-link {
+            font-size: 12px;
+            color: Black;
+        }
+        nav {
+      padding: 7px;
+      clear: both;
+    }
+</style>
 </head>
 <body>
+<!-- Header -->
+ <div class="header-navbar">
+        <ul class="header-links">
+            <a class="header-link" href="cosmic-soup.html"><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
+               <a class="header-link" href="aroundtheworld.html"><li><i class="fa fa-fw fa-heart"></i>AROUND THE WORLD</li></a>
+                <a class="header-link" href="oppurtunet.html"><li><i class="fa fa-fw fa-heart"></i>OPPURTUNET</li></a>
+                <a class="header-link" href="gallery.html"><li><i class="fa fa-fw fa-heart"></i>GALLERY</li></a>
+                <a class="header-link" href="aboutus.html"><li><i class="fa fa-fw fa-heart"></i>ABOUT US</li></a>
+                <a class="header-link" href="login.html"><li><i class="fa fa-fw fa-heart"></i>LOG IN</li></a>
 
- <div class ="one">
+        </ul>
+        </div>
+<hr>
+<hr>
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style>
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+</style>
+</head>
+<body>
+<!--  Our  Goal Tab -->
+<div id="flip">OUR GOAL</div>
+<div id="panel">We hope that young adolescents like us learn more about what is happening around the world</div>
+
     <h2 class="title" style="text-align:center;">
-      Millennial’s Values and Political Values Are a Mixed Bag
+      Millennial Values and Political Values Are a Mixed Bag
     </h2>
     <p style="text-align:center;">
       By Gillian Flaccus, Tamara Lush and Martha Irvine, August 22, 2016 11:53 AM
     </p>
     <br>
     <br>
-  </div>
+
   <div class = "one" id="element1">
     <p class="first">
       America’s oldest millennials — nearing 20 when airplanes slammed into the World Trade Center — can remember the economic prosperity of the 1990s, and when a different Clinton ran for president. The younger end of the generation — now nearing 20 — can’t recall a time without terrorism or economic worry.</p>
@@ -33,7 +109,7 @@
     <p class="first">
      As part of its Divided America series, The Associated Press interviewed seven millennial voters in five states where the generation could have an outsized influence this fall. They are a mosaic, from a black Nevada teen voting for the first time to a Florida-born son of Latino immigrants to a white Christian couple in Ohio.
      </p>
-    <p class="first">Challenging Pollsters' Expectations
+    <p>Challenging Pollsters' Expectations
     </p>
     <p class="first"> These voters illustrate how millennials are challenging pollsters’ expectations.
     </p>
@@ -55,6 +131,8 @@
     </p>
     <p class="first"> National debt is his top concern. As a black man, he’s turned off by some of Donald Trump’s remarks, but likes the Republican’s aggressive economic stance. He also considered voting for Clinton, but is angry about her use of a private email server while secretary of state. Unsure at first, he recently decided on Clinton.
     </p>
+    </div>
+    <div class="two" id="element2">
     <p class="first"> Anibal David Cabrera wouldn’t think of voting outside his party.
     </p>
     <p class="first"> The son of a Honduran mother and Dominican father, he graduated from college in 2008. He was a finance major, but the economic collapse dried up jobs. Now 31 and living in Tampa, Florida, he finally found an accounting position at a small firm. He feels he’s entering the prime of his life a few steps behind, through no fault of his own.
@@ -98,6 +176,46 @@
     <a href="https://tumblr.com">tumblr</a>
   </div>
   </div>
+<div id="css-table">
+<div class="col"><font face="LemonMilk"><p><img src="cs-logo.png" style="width:40%"></img></p><p>COSMIC SOUP</div>
+<div class="col"><p>COSMIC SOUP WAS CREATED AT THE ADOBE NY GIRLS WHO CODE SIP BY FOUR GIRLS. WITH A HOPE TO GET MORE TEENS TO TALK ABOUT CURRENT ISSUES AND DISCUSS THEIR IDEAS, THIS WEBSITE WAS CREATED.</p></div>
+<div class="col"><p>SUBSCRIBE FOR UPDATES!</p></div>
+</div></font>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.one {
+  text-align: center;
+  font-family: 'LemonMilk', sans-serif; 
+ }
+</style>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.white {
+  color:#FFFFFF;
+}
+#css-table {
+  display: table;
+}
+#css-table .col {
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
+}
+#css-table .col:nth-child(even) { 
+}
+#css-table .col:nth-child(odd) {
 
+}
+</style>
 </body>
 </html>

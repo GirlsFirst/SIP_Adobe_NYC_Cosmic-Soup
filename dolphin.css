@@ -1,4 +1,4 @@
-body {
+﻿body {
   font-family: "Open Sans", sans-serif;
 }
 
@@ -10,9 +10,8 @@ div {
 }
 
 .one {
-  margin-left: 60px;
-  width: 700px;
-  margin-left: 40px;
+  width: 47%;
+  margin-left: 2%;
 }
 
 p.first {
@@ -20,7 +19,7 @@ p.first {
 }
   
 p {
-  word-wrap: break-word;
+  text-align: justify;
 }
 
 .footer {
@@ -28,8 +27,8 @@ p {
 }
 
 .two {
-  margin-right: 10px;
-  margin-bottom: 100px;
+  width: 47%;
+  margin-right: 2%;
 }
 /* Dropdown Button */
 .dropbtn {
