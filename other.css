@@ -4,6 +4,7 @@ body{
 
 p.first {
   text-indent: 5em;
+  font-family: 'Architects Daughter', cursive;
 }
   
 p {
@@ -27,7 +28,7 @@ p {
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -47,7 +48,8 @@ p {
 
 /* Caption text */
 .text {
-  color: red;
+  color: black;
+  font-family: 'Archivo Narrow', sans-serif;
   font-size: 25px;
   padding: 8px 12px;
   position: absolute;
