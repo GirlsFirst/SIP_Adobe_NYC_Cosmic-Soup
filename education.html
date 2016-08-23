@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="gallerycosmic.js"></script>
+<link rel="stylesheet" href="education.css">
+
+  <title>Gallery</title>
+</head>
+<body>
+<style>
+    header {
+      text-align: center;
+      display: table;
+      width: 100%;
+      margin: 4px 0;
+
+        }
+
+         .header-navbar {
+      text-align: center;
+      clear: both;
+      width: 100%;
+        }
+        ul.header-links {
+            margin: 0 auto;
+        }
+        ul.header-links li {
+            text-align: center;
+            font-family: 'LemonMilk', sans-serif;  
+            display: inline-block;
+            padding: 10px 50px;
+            border-radius: 2px;
+
+        }
+        ul.header-links li:hover {
+            /*background-color: #E0FFFC*/  
+                  }
+        .header-link {
+            font-size: 12px;
+            color: Black;
+        }
+        nav {
+      padding: 7px;
+      clear: both;
+      }
+      .one {
+        text-align: center;
+        font-family: 'LemonMilk', sans-serif; 
+        }  
+</style>
+<style type="text/css">
+    div.column { 
+    padding-left: 5em;
+    -webkit-column-count: 2; 
+    -moz-column-count: 2; 
+    column-count: 2;
+}
+.white {
+  color:#FFFFFF;
+}
+#css-table {
+  display: table;
+}
+#css-table .col {
+  display: table-cell;
+  width: 25%;
+  padding: 10px;
+}
+#css-table .col:nth-child(even) { 
+}
+#css-table .col:nth-child(odd) {
+
+}
+</style>
+<body>
+<div class="header-navbar">
+    <ul class="header-links">
+        <a class="header-link" ><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
+        <a class="header-link" href="aroundtheworld.html"><li><i class="fa fa-fw fa-heart"></i>AROUND THE WORLD</li></a>
+        <a class="header-link" href="forum.html"><li><i class="fa fa-fw fa-heart"></i>FORUM</li></a>
+        <a class="header-link" href="oppurtunet.html"><li><i class="fa fa-fw fa-heart"></i>OPPURTUNET</li></a>
+        <a class="header-link" href="gallerycosmic.html"><li><i class="fa fa-fw fa-heart"></i>GALLERY</li></a>
+        <a class="header-link" href="aboutus.html"><li><i class="fa fa-fw fa-heart"></i>ABOUT US</li></a>
+        <a class="header-link" href="login.html"><li><i class="fa fa-fw fa-heart"></i>LOG IN</li></a>
+        </ul>
+        </div>
+        
+  <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="hw.jpg" style="width:100%">
+    <div class="text">Drowning</div>
+    <!--<br>
+    <br>
+    <br>
+       <p>In memory of our lost Latinx queer siblings. Their names are the ones we should remember. You have not died in vain. You will not die from our mouths, minds or hearts. We love you. To my living queer siblings - I love you, value you, and I am so happy you are here.<br>
+    <p>This is the time to change. Gun control is necessary. A complete denouncement of homophobia and transphobia is necessary. Protest, anger, and healing are necessary. We can make this world better.</p>-->
+<br>
+<a href="http://socialissuephotography.tumblr.com/post/117792375013/drowning-an-original-photograph-by-kira">Kira Machado</a>, tumblr
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"> 2 / 2</div>
+    <div class="text">Education in Sweden</div>
+    <br>
+    <p class ="first"> I guess I can start off by saying that we're practically paid to go to school here. As long as we're in school, we have a "student allowance" which is to say, every month we get roughly $120 that is supposed to go to school material and other necessities like that. There's no difference between mandatory school and college regarding this, you'll always get your $120.</p>
+    <p> college is always free. This, I know is a major difference between Sweden and the U.S.(and a preferable one as well).</p> 
+    <p>Of course, we'll most likely still have to take student loans when it comes to college to pay rent and stuff like that. but school in itself is always free, no matter how prestigious the college is. And that is working just swell for us.</p>
+    <p> I feel like the us system is very unfair. It's literally made to benefit the rich in every possible way while it's making things extremely hard for people who don't have a lot of money.It also helps making the social gap between rich and poor ever wider. and coming from a country currently ruled by social democracy, most swedes would frown at that idea.</p>
+    <p> Overall, college seems to be made a privilege in the us, and school shouldn't be a privilege. Especially not in a first world country. it should be a guaranteed right.</p> 
+    <p>(a sidenote is you also seem to get a lot more homework than we do (we get practically none), and the schedules seem to be a lot tighter than ours (at least in high school) and i mean, i'm stressed on the daily anyway so i can't imagine what that must be like for you.) </p>
+  <br>
+  <p> - Emilia </p>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+
+<script>
+  var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
