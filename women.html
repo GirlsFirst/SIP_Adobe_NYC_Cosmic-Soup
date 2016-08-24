@@ -16,9 +16,7 @@
       display: table;
       width: 100%;
       margin: 4px 0;
-
         }
-
          .header-navbar {
       text-align: center;
       clear: both;
@@ -33,7 +31,6 @@
             display: inline-block;
             padding: 10px 50px;
             border-radius: 2px;
-
         }
         ul.header-links li:hover {
             /*background-color: #E0FFFC*/  
@@ -72,15 +69,13 @@
 #css-table .col:nth-child(even) { 
 }
 #css-table .col:nth-child(odd) {
-
 }
 </style>
 <body>
 <div class="header-navbar">
     <ul class="header-links">
-        <a class="header-link" ><li><i class="fa fa-fw fa-heart"></i><img src="cs-logo.png"; style="width:10%"></li></a>
+        <a class="header-link" href="Cosmic-Soup.html" ><li><i class="fa fa-fw fa-heart""></i><img src="cs-logo.png"; style="width:10%"></li></a>
         <a class="header-link" href="aroundtheworld.html"><li><i class="fa fa-fw fa-heart"></i>AROUND THE WORLD</li></a>
-        <a class="header-link" href="forum.html"><li><i class="fa fa-fw fa-heart"></i>FORUM</li></a>
         <a class="header-link" href="oppurtunet.html"><li><i class="fa fa-fw fa-heart"></i>OPPURTUNET</li></a>
         <a class="header-link" href="galleryhome.html"><li><i class="fa fa-fw fa-heart"></i>GALLERY</li></a>
         <a class="header-link" href="aboutus.html"><li><i class="fa fa-fw fa-heart"></i>ABOUT US</li></a>
@@ -207,15 +202,12 @@
 <script>
   var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -231,13 +223,124 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block"; 
   dots[slideIndex-1].className += " active";
 }
-
 </script>
 <div id="css-table">
 <div class="col"><font face="LemonMilk"><p><img src="cs-logo.png" style="width:40%"></img></p><p>COSMIC SOUP</div>
 <div class="col"><p>COSMIC SOUP WAS CREATED AT THE ADOBE NY GIRLS WHO CODE SIP BY FOUR GIRLS. WITH A HOPE TO GET MORE TEENS TO TALK ABOUT CURRENT ISSUES AND DISCUSS THEIR IDEAS, THIS WEBSITE WAS CREATED.</p></div>
 <div class="col"><p>SUBSCRIBE FOR UPDATES!</p></div>
 </div></font>
+<style type="text/css">
+  body{
+  background-color: #FFFFFF;
+}
 
+p.first {
+  text-indent: 5em;
+  font-family: 'Architects Daughter', cursive;
+}
+  
+p {
+  word-wrap: break-word;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: 'Archivo Narrow', sans-serif;
+  color: #000000;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+body,
+html { height: 100%;}
+.nav .open > a, 
+.nav .open > a:hover, 
+.nav .open > a:focus {background-color: transparent;}
+</style>
 </body>
 </html>

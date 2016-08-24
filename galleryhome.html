@@ -95,7 +95,7 @@ header {
     <div class="w3-dropdown-content w3-border" style="margin-left:615px">
     <a href="blacklivesmatter.html">Black Lives Matter</a>
     <a href="lgbt.html">LBGT</a>
-    <a href="education,html">Education</a>
+    <a href="education.html">Education</a>
     <a href="women.html">Women Empowerment</a>
     <a href="environment.html"> Environment</a>
     <a href="other.html">Other</a>
@@ -157,8 +157,127 @@ header {
 #css-table .col:nth-child(even) { 
 }
 #css-table .col:nth-child(odd) {
-
 }
 </style>
+<!-- GALLERY CSS -->
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a.hover { 
+    color:#000000; 
+}
+a {
+    font-color:#000000; 
+
+}
+
+.slider {
+    width: 60%;
+    margin: 2em auto;
+    
+}
+
+.slider-wrapper {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+
+
+.slider-wrapper > .slide:first-child {
+    opacity: 1;
+}
+
+h1 {
+    text-align: center;
+}
+p {
+    text-align:center;
+}
+button class{
+    align: center;
+}
+</style>
+<!-- GALLERY JS -->
+<script type="text/javascript">
+(function() {
+  
+  function Slideshow( element ) {
+    this.el = document.querySelector( element );
+    this.init();
+  }
+  
+  Slideshow.prototype = {
+    init: function() {
+      this.wrapper = this.el.querySelector( ".slider-wrapper" );
+      this.slides = this.el.querySelectorAll( ".slide" );
+      this.previous = this.el.querySelector( ".slider-previous" );
+      this.next = this.el.querySelector( ".slider-next" );
+      this.index = 0;
+      this.total = this.slides.length;
+      this.timer = null;
+      
+      this.action();
+      this.stopStart(); 
+    },
+    _slideTo: function( slide ) {
+      var currentSlide = this.slides[slide];
+      currentSlide.style.opacity = 1;
+      
+      for( var i = 0; i < this.slides.length; i++ ) {
+        var slide = this.slides[i];
+        if( slide !== currentSlide ) {
+          slide.style.opacity = 0;
+        }
+      }
+    },
+    action: function() {
+      var self = this;
+      self.timer = setInterval(function() {
+        self.index++;
+        if( self.index == self.slides.length ) {
+          self.index = 0;
+        }
+        self._slideTo( self.index );
+        
+      }, 3000);
+    },
+    stopStart: function() {
+      var self = this;
+      self.el.addEventListener( "mouseover", function() {
+        clearInterval( self.timer );
+        self.timer = null;
+        
+      }, false);
+      self.el.addEventListener( "mouseout", function() {
+        self.action();
+        
+      }, false);
+    }
+    
+    
+  };
+  
+  document.addEventListener( "DOMContentLoaded", function() {
+    
+    var slider = new Slideshow( "#main-slider" );
+    
+  });
+  
+  
+})();
+</script>
 </body>
 </html>
